@@ -32,7 +32,7 @@ export default async function DashboardPage() {
               <p className="text-gray-600">Welcome back, {user.username}!</p>
             </div>
             <div className="flex items-center space-x-4">
-              <Link href={`/${user.username}`}>
+              <Link href={`/u/${user.username}`}>
                 <Button variant="outline" className="hover:bg-gray-50">
                   <User className="h-4 w-4 mr-2" />
                   View Profile
@@ -126,7 +126,7 @@ export default async function DashboardPage() {
                     <div className="flex-1">
                       <div className="flex items-center space-x-2 mb-2">
                         <h3 className="text-lg font-semibold text-gray-900 hover:text-blue-600">
-                          <Link href={`/${user.username}/post/${post.slug}`}>
+                          <Link href={`/u/${user.username}/post/${post.slug}`}>
                             {post.title}
                           </Link>
                         </h3>
@@ -140,7 +140,7 @@ export default async function DashboardPage() {
                       </div>
                     </div>
                     <div className="flex items-center space-x-2">
-                      <Link href={`/${user.username}/post/${post.slug}`}>
+                      <Link href={`/u/${user.username}/post/${post.slug}`}>
                         <Button variant="ghost" size="sm">
                           View
                         </Button>
