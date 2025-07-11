@@ -12,7 +12,7 @@ export default async function DashboardPage() {
   const user = await getCurrentUser();
   
   if (!user) {
-    redirect('/login');
+    redirect('/dashboard');
   }
 
   const posts = await prisma.post.findMany({

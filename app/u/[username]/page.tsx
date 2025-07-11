@@ -14,7 +14,7 @@ interface UserPageProps {
 
 export default async function UserPage({ params }: UserPageProps) {
   const user = await prisma.user.findUnique({
-    where: { username: params.username },
+    where: { username: (await params).username },
     include: {
       posts: {
         orderBy: { createdAt: 'desc' }

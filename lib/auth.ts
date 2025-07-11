@@ -56,6 +56,7 @@ export async function getCurrentUser() {
     where: { id: payload.userId },
     select: { id: true, username: true }
   });
+  console.log('Current user:', user);
 
   return user;
 }
