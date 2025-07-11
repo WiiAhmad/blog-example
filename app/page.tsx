@@ -42,7 +42,7 @@ export default function HomePage() {
                   Get Started
                 </Button>
               </Link>
-              <Link href="/ahmad">
+              <Link href="/u/ahmad">
                 <Button size="lg" variant="outline" className="border-gray-300 hover:bg-gray-50">
                   View Sample Blog
                 </Button>

@@ -86,7 +86,7 @@ export function EditPostForm({ post, initialContent, username }: EditPostFormPro
               </div>
             </div>
             <div className="flex items-center space-x-2">
-              <Link href={`/${username}/post/${post.slug}`}>
+              <Link href={`/u/${username}/post/${post.slug}`}>
                 <Button variant="outline">
                   <Eye className="h-4 w-4 mr-2" />
                   View Post
